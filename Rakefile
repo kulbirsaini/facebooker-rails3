@@ -8,7 +8,17 @@ rescue LoadError
   $stderr.puts "Install the multi_rails gem to run tests against multiple versions of Rails"
 end
 
-require 'lib/facebooker/version'
+#require 'lib/facebooker/version'
+
+module Facebooker #:nodoc:
+  module VERSION #:nodoc:
+    MAJOR = 1
+    MINOR = 0
+    TINY  = 64
+
+    STRING = [MAJOR, MINOR, TINY].join('.')
+  end
+end
 
 NAME = 'facebooker-rails3'
 
