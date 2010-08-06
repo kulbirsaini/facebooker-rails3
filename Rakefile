@@ -27,7 +27,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |spec|
     spec.name         = NAME
-    spec.version      = Facebooker::VERSION::STRING
+    spec.version      = '0.1.2' #Facebooker::VERSION::STRING
     spec.summary      = "Facebooker for Rails 3"
     spec.description  = spec.summary
     spec.homepage     = "http://github.com/tarsolya/facebooker-rails3"
