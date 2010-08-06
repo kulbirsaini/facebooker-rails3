@@ -618,13 +618,13 @@ module Facebooker
     def self.register(users)
       user_map={}
       users=users.map do |h|
-        returning h.dup do |d|
-          if email=d.delete(:email)
-            hash = hash_email(email)
-            user_map[hash]=h
-            d[:email_hash]=hash
-          end
+        d = h.dup
+        if email=d.delete(:email)
+          hash = hash_email(email)
+          user_map[hash]=h
+          d[:email_hash]=hash
         end
+        d
       end
       Facebooker::Session.create.post("facebook.connect.registerUsers",:accounts=>users.to_json) do |ret|
         ret.each do |hash|

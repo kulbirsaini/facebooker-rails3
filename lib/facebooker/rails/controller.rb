@@ -95,7 +95,7 @@ module Facebooker
       end
       
       def session_for_current_user?
-        @facebook_session = session[:facebook_session] and @facebook_session.user.uid == new_fb_cookies['uid']  
+        @facebook_session = session[:facebook_session] and @facebook_session.user.uid == fb_cookies['uid']  
       end
       
       def user_has_deauthorized_application?
@@ -142,12 +142,12 @@ module Facebooker
       
       def parse_fb_cookies
         parsed = {}
-        return parsed unless Facebooker.api_key and fb_cookie_new = cookies["fbs_#{Facebooker.api_key}"] 
-        fb_cookie_new = fb_cookie_new[1, fb_cookie_new.length-2]
-        fb_cookie_new.split('&').each do |str|
-          key, val = str.split('=')
-          parsed[key] = val
-        end
+        return parsed unless Facebooker.api_key and fb_cookie_new = cookies["fbsetting_#{Facebooker.api_key}"] 
+        parsed['session_key'] = cookies["#{fb_cookie_prefix}session_key"]
+        parsed['uid'] = cookies["#{fb_cookie_prefix}user"]
+        parsed['expires'] = cookies["#{fb_cookie_prefix}expires"]
+        parsed['sig'] = cookies["#{fb_cookie_prefix}ss"]
+        parsed['secret'] = cookies["#{Facebooker.api_key}"]
         parsed
       end
 
