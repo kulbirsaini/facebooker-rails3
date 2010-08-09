@@ -8,49 +8,15 @@ Gem::Specification.new do |s|
   s.version = "1.0.65"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["chad@chadfowler.com", "tarsolya@gmail.com"]
+  s.authors = ["kulbirsaini@crypsis.net"]
   s.date = %q{2010-08-09}
   s.description = %q{Facebooker for Rails 3}
-  s.email = %q{tarsolya@gmail.com}
+  s.email = %q{kulbirsaini@crypsis.net}
   s.extra_rdoc_files = [
     "README.textile"
   ]
   s.files = [
-    "generators/facebook/facebook_generator.rb",
-     "generators/facebook/templates/config/facebooker.yml",
-     "generators/facebook/templates/public/javascripts/facebooker.js",
-     "generators/facebook_controller/USAGE",
-     "generators/facebook_controller/facebook_controller_generator.rb",
-     "generators/facebook_controller/templates/controller.rb",
-     "generators/facebook_controller/templates/functional_test.rb",
-     "generators/facebook_controller/templates/helper.rb",
-     "generators/facebook_controller/templates/view.fbml.erb",
-     "generators/facebook_controller/templates/view.html.erb",
-     "generators/facebook_publisher/facebook_publisher_generator.rb",
-     "generators/facebook_publisher/templates/create_facebook_templates.rb",
-     "generators/facebook_publisher/templates/publisher.rb",
-     "generators/facebook_scaffold/USAGE",
-     "generators/facebook_scaffold/facebook_scaffold_generator.rb",
-     "generators/facebook_scaffold/templates/controller.rb",
-     "generators/facebook_scaffold/templates/facebook_style.css",
-     "generators/facebook_scaffold/templates/functional_test.rb",
-     "generators/facebook_scaffold/templates/helper.rb",
-     "generators/facebook_scaffold/templates/layout.fbml.erb",
-     "generators/facebook_scaffold/templates/layout.html.erb",
-     "generators/facebook_scaffold/templates/style.css",
-     "generators/facebook_scaffold/templates/view_edit.fbml.erb",
-     "generators/facebook_scaffold/templates/view_edit.html.erb",
-     "generators/facebook_scaffold/templates/view_index.fbml.erb",
-     "generators/facebook_scaffold/templates/view_index.html.erb",
-     "generators/facebook_scaffold/templates/view_new.fbml.erb",
-     "generators/facebook_scaffold/templates/view_new.html.erb",
-     "generators/facebook_scaffold/templates/view_show.fbml.erb",
-     "generators/facebook_scaffold/templates/view_show.html.erb",
-     "generators/publisher/publisher_generator.rb",
-     "generators/xd_receiver/templates/xd_receiver.html",
-     "generators/xd_receiver/templates/xd_receiver_ssl.html",
-     "generators/xd_receiver/xd_receiver_generator.rb",
-     "lib/facebooker.rb",
+    "lib/facebooker.rb",
      "lib/facebooker/adapters/adapter_base.rb",
      "lib/facebooker/adapters/bebo_adapter.rb",
      "lib/facebooker/adapters/facebook_adapter.rb",
@@ -123,6 +89,40 @@ Gem::Specification.new do |s|
      "lib/facebooker/session.rb",
      "lib/facebooker/stream_post.rb",
      "lib/facebooker/version.rb",
+     "lib/generators/facebook/facebook_generator.rb",
+     "lib/generators/facebook/templates/config/facebooker.yml",
+     "lib/generators/facebook/templates/public/javascripts/facebooker.js",
+     "lib/generators/facebook_controller/USAGE",
+     "lib/generators/facebook_controller/facebook_controller_generator.rb",
+     "lib/generators/facebook_controller/templates/controller.rb",
+     "lib/generators/facebook_controller/templates/functional_test.rb",
+     "lib/generators/facebook_controller/templates/helper.rb",
+     "lib/generators/facebook_controller/templates/view.fbml.erb",
+     "lib/generators/facebook_controller/templates/view.html.erb",
+     "lib/generators/facebook_publisher/facebook_publisher_generator.rb",
+     "lib/generators/facebook_publisher/templates/create_facebook_templates.rb",
+     "lib/generators/facebook_publisher/templates/publisher.rb",
+     "lib/generators/facebook_scaffold/USAGE",
+     "lib/generators/facebook_scaffold/facebook_scaffold_generator.rb",
+     "lib/generators/facebook_scaffold/templates/controller.rb",
+     "lib/generators/facebook_scaffold/templates/facebook_style.css",
+     "lib/generators/facebook_scaffold/templates/functional_test.rb",
+     "lib/generators/facebook_scaffold/templates/helper.rb",
+     "lib/generators/facebook_scaffold/templates/layout.fbml.erb",
+     "lib/generators/facebook_scaffold/templates/layout.html.erb",
+     "lib/generators/facebook_scaffold/templates/style.css",
+     "lib/generators/facebook_scaffold/templates/view_edit.fbml.erb",
+     "lib/generators/facebook_scaffold/templates/view_edit.html.erb",
+     "lib/generators/facebook_scaffold/templates/view_index.fbml.erb",
+     "lib/generators/facebook_scaffold/templates/view_index.html.erb",
+     "lib/generators/facebook_scaffold/templates/view_new.fbml.erb",
+     "lib/generators/facebook_scaffold/templates/view_new.html.erb",
+     "lib/generators/facebook_scaffold/templates/view_show.fbml.erb",
+     "lib/generators/facebook_scaffold/templates/view_show.html.erb",
+     "lib/generators/publisher/publisher_generator.rb",
+     "lib/generators/xd_receiver/templates/xd_receiver.html",
+     "lib/generators/xd_receiver/templates/xd_receiver_ssl.html",
+     "lib/generators/xd_receiver/xd_receiver_generator.rb",
      "lib/net/http_multipart_post.rb",
      "lib/rack/facebook.rb",
      "lib/rack/facebook_session.rb",
@@ -131,7 +131,7 @@ Gem::Specification.new do |s|
      "lib/tasks/tunnel.rake",
      "rails/init.rb"
   ]
-  s.homepage = %q{http://github.com/tarsolya/facebooker-rails3}
+  s.homepage = %q{http://github.com/kulbirsaini/facebooker-rails3}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
