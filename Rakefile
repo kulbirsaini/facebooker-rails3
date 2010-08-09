@@ -18,9 +18,9 @@ begin
     spec.name         = NAME
     spec.summary      = "Facebooker for Rails 3"
     spec.description  = spec.summary
-    spec.homepage     = "http://github.com/tarsolya/facebooker-rails3"
-    spec.authors      = ["chad@chadfowler.com", "tarsolya@gmail.com"]
-    spec.email        = "tarsolya@gmail.com"
+    spec.homepage     = "http://github.com/kulbirsaini/facebooker-rails3"
+    spec.authors      = ["kulbirsaini@crypsis.net"]
+    spec.email        = "kulbirsaini@crypsis.net"
 
     spec.files = Dir["{lib}/**/*", "{rails}/**/*", "{generators}/**/*"]
     #spec.files = FileList['[A-Z]*', File.join(*%w[{generators,lib,rails} ** *]).to_s]
