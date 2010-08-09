@@ -30,7 +30,7 @@ begin
     spec.version      = '0.1.2' #Facebooker::VERSION::STRING
     spec.summary      = "Facebooker for Rails 3"
     spec.description  = spec.summary
-    spec.homepage     = "http://github.com/tarsolya/facebooker-rails3"
+    spec.homepage     = "http://github.com/kulbirsaini/facebooker-rails3"
     spec.authors      = ["chad@chadfowler.com", "tarsolya@gmail.com"]
     spec.email        = "tarsolya@gmail.com"
 
