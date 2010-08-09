@@ -128,8 +128,7 @@ Gem::Specification.new do |s|
      "lib/rack/facebook_session.rb",
      "lib/tasks/facebooker.rake",
      "lib/tasks/facebooker.rb",
-     "lib/tasks/tunnel.rake",
-     "rails/init.rb"
+     "lib/tasks/tunnel.rake"
   ]
   s.homepage = %q{http://github.com/kulbirsaini/facebooker-rails3}
   s.rdoc_options = ["--charset=UTF-8"]

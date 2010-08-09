@@ -22,7 +22,7 @@ begin
     spec.authors      = ["kulbirsaini@crypsis.net"]
     spec.email        = "kulbirsaini@crypsis.net"
 
-    spec.files = Dir["{lib}/**/*", "{rails}/**/*", "{generators}/**/*"]
+    spec.files = Dir["{lib}/**/*"]
     #spec.files = FileList['[A-Z]*', File.join(*%w[{generators,lib,rails} ** *]).to_s]
   end
   #Jeweler::GemcutterTasks.new
